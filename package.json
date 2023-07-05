@@ -1,6 +1,6 @@
 {
   "name": "ldap-sha512",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Ldap sha512-crypt password generator for node",
   "main": "dist/index.js",
   "types": "src/index.d.ts",
@@ -9,7 +9,14 @@
     "build": "tsc",
     "dev": "tsc && node dist/index.js"
   },
-  "keywords": ["sha512", "ldap", "crypt", "password", "hash", "$6$"],
+  "keywords": [
+    "sha512",
+    "ldap",
+    "crypt",
+    "password",
+    "hash",
+    "$6$"
+  ],
   "author": {
     "name": "Gabriel 'DethDKN' Rosa",
     "email": "gabriel@rosa.dev.br",
