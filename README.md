@@ -7,7 +7,7 @@
 - Verify passwords encrypted with sha512.
 - No external dependencies.
 
-## 🚀 SETUP
+## 🚀 Setup
 
 1. Install with your favorite package manager:
    - **pnpm** : `pnpm i ldap-sha512`
@@ -19,7 +19,7 @@
 import { sha512Crypt, verifySha512 } from 'ldap-sha512'
 ```
 
-## ⚡️ USAGE
+## ⚡️ Usage
 
 1. Encrypt a plain text password using sha512 and a random salt:
 ```ts
