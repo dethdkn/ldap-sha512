@@ -1,6 +1,6 @@
 {
   "name": "ldap-sha512",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Ldap sha512-crypt password generator for node",
   "main": "dist/index.js",
   "types": "src/index.d.ts",
