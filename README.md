@@ -1,5 +1,16 @@
 <h1 align="center">Ldap-sha512</h1>
 <p align="center">Ldap sha512-crypt password generator for node</p>
+<p align="center">
+   <a href="https://www.npmjs.com/package/ldap-sha512">
+      <img src="https://img.shields.io/npm/dt/ldap-sha512?color=%23c12127&label=downloads&logo=npm" alt="npm"/>
+   </a>
+   <a href="https://github.com/dethdkn/ldap-sha512/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/dethdkn/ldap-sha512?color=%233da639&logo=open%20source%20initiative" alt="License"/>
+  </a>
+   <a href="https://gitmoji.dev">
+      <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67" alt="Gitmoji"/>
+   </a>
+</p>
 
 ## ✨ Features
 
