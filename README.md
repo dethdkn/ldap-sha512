@@ -10,6 +10,9 @@
    <a href="https://gitmoji.dev">
       <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67" alt="Gitmoji"/>
    </a>
+   <a href="https://rosa.dev.br">
+      <img src="https://img.shields.io/badge/check me!-👻-06b6d4" alt="rosa.dev.br"/>
+   </a>
 </p>
 
 ## ✨ Features
