@@ -1,32 +1,38 @@
 {
-  "name": "ldap-sha512",
-  "version": "1.0.5",
-  "description": "Ldap sha512-crypt password generator for node",
-  "main": "dist/index.js",
-  "types": "src/index.d.ts",
-  "type": "module",
-  "scripts": {
-    "build": "tsc",
-    "dev": "tsc && node dist/index.js"
-  },
-  "keywords": [
-    "sha512",
-    "ldap",
-    "crypt",
-    "password",
-    "hash",
-    "$6$"
-  ],
-  "author": {
-    "name": "Gabriel 'DethDKN' Rosa",
-    "email": "gabriel@rosa.dev.br",
-    "url": "https://rosa.dev.br"
-  },
-  "homepage": "https://github.com/dethdkn/ldap-sha512",
-  "bugs": "https://github.com/dethdkn/ldap-sha512/issues",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^20.3.3",
-    "typescript": "^5.1.6"
-  }
+	"name": "ldap-sha512",
+	"type": "module",
+	"version": "1.1.0",
+	"description": "Ldap sha512-crypt password generator for node",
+	"author": {
+		"name": "Gabriel 'DethDKN' Rosa",
+		"email": "gabriel@rosa.dev.br",
+		"url": "https://rosa.dev.br"
+	},
+	"license": "MIT",
+	"homepage": "https://github.com/dethdkn/ldap-sha512",
+	"bugs": "https://github.com/dethdkn/ldap-sha512/issues",
+	"keywords": [
+		"sha512",
+		"ldap",
+		"crypt",
+		"password",
+		"hash",
+		"$6$"
+	],
+	"main": "dist/index.js",
+	"types": "src/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsc && node dist/index.js",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"test": "vitest run"
+	},
+	"devDependencies": {
+		"@antfu/eslint-config": "^1.1.0",
+		"@types/node": "^20.3.3",
+		"eslint": "^8.53.0",
+		"typescript": "^5.1.6",
+		"vitest": "^0.34.6"
+	}
 }
