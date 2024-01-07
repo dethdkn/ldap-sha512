@@ -1,7 +1,7 @@
 {
 	"name": "ldap-sha512",
 	"type": "module",
-	"version": "1.1.0",
+	"version": "2.0.0",
 	"description": "Ldap sha512-crypt password generator for node",
 	"author": {
 		"name": "Gabriel 'DethDKN' Rosa",
@@ -23,16 +23,15 @@
 	"types": "src/index.d.ts",
 	"scripts": {
 		"build": "tsc",
-		"dev": "tsc && node dist/index.js",
 		"lint": "eslint .",
 		"lint:fix": "eslint . --fix",
-		"test": "vitest run"
+		"test": "tsc && vitest run"
 	},
 	"devDependencies": {
-		"@antfu/eslint-config": "^1.1.0",
-		"@types/node": "^20.3.3",
-		"eslint": "^8.53.0",
-		"typescript": "^5.1.6",
-		"vitest": "^0.34.6"
+		"@antfu/eslint-config": "^2.6.1",
+		"@types/node": "^20.10.6",
+		"eslint": "^8.56.0",
+		"typescript": "^5.3.3",
+		"vitest": "^1.1.3"
 	}
 }
