@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { sha512Crypt, sha512CryptAsync, verifySha512, verifySha512Async } from '../src/index'
+import { sha512Crypt, verifySha512 } from '../src/index'
 
 const password = 'mySuperSecretPassword'
 const salt = 'myDopeCustomSalt'
@@ -33,34 +33,4 @@ it('should return true', () => {
 it('should return false', () => {
 	const returnedVerification = verifySha512(password, anotherEncryptedPass)
 	expect(returnedVerification).toBe(false)
-})
-
-it('async - should return a string when not adding a salt', () => {
-	const returnedPass = sha512CryptAsync(password)
-	expect(returnedPass).resolves.toBeTypeOf('string')
-})
-
-it('async - should return a string when adding a salt', () => {
-	const returnedPass = sha512CryptAsync(password, salt)
-	expect(returnedPass).resolves.toBeTypeOf('string')
-})
-
-it('async - should return a string equals to the encrypted password', () => {
-	const returnedPass = sha512CryptAsync(password, salt)
-	expect(returnedPass).resolves.toBe(encryptedPass)
-})
-
-it('async - should return a error when adding a salt larger than 16 chars', () => {
-	const returnedPass = sha512CryptAsync(password, 'saltLargerThan16Chars')
-	expect(returnedPass).rejects.toThrowError(/^The maximum length of salt is 16 characters$/)
-})
-
-it('async - should return true', () => {
-	const returnedVerification = verifySha512Async(password, encryptedPass)
-	expect(returnedVerification).resolves.toBe(true)
-})
-
-it('async - should return false', () => {
-	const returnedVerification = verifySha512Async(password, anotherEncryptedPass)
-	expect(returnedVerification).resolves.toBe(false)
 })

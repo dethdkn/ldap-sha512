@@ -31,7 +31,7 @@
 
 2. Import the function into your project:
 ```ts
-import { sha512Crypt, sha512CryptAsync, verifySha512, verifySha512Async } from 'ldap-sha512'
+import { sha512Crypt, verifySha512 } from 'ldap-sha512'
 ```
 
 ## ⚡️ Usage
@@ -40,11 +40,6 @@ import { sha512Crypt, sha512CryptAsync, verifySha512, verifySha512Async } from '
 ```ts
 const encryptedPassword = sha512Crypt('mySuperSecretPassword')
 // return {CRYPT}$6$NQgPVC0up/oNVCb4$Aduz92Zfo/PFDE/XhvA3QmSqHquqdNiCdZvc9N5/UTpEUepMdd/6Mq/TeoM07wvyxHpg8ELGVzTWZt2e7Z9LY/
-
-// OR
-
-const encryptedPassword = await sha512CryptAsync('mySuperSecretPassword')
-// return Promise that resolves to => {CRYPT}$6$NQgPVC0up/oNVCb4$Aduz92Zfo/PFDE/XhvA3QmSqHquqdNiCdZvc9N5/UTpEUepMdd/6Mq/TeoM07wvyxHpg8ELGVzTWZt2e7Z9LY/
 ```
 
 2. Encrypt a plain text password using sha512 and a custom salt:\
@@ -52,11 +47,6 @@ const encryptedPassword = await sha512CryptAsync('mySuperSecretPassword')
 ```ts
 const encryptedPassword = sha512Crypt('mySuperSecretPassword', 'myDopeCustomSalt')
 // return {CRYPT}$6$myDopeCustomSalt$4ENRn.vwcs09z0fjr6Jt3NMOFVkn.p9v7ilDcK/CwRnQm48Y5HawkiGivh4gBTLwSY4SQNfCAe05E1nCTpZ0u.
-
-// OR
-
-const encryptedPassword = await sha512CryptAsync('mySuperSecretPassword', 'myDopeCustomSalt')
-// return Promise that resolves to => {CRYPT}$6$myDopeCustomSalt$4ENRn.vwcs09z0fjr6Jt3NMOFVkn.p9v7ilDcK/CwRnQm48Y5HawkiGivh4gBTLwSY4SQNfCAe05E1nCTpZ0u.
 ```
 
 3. Validate your plain text password with a sha512 encrypted password:\
@@ -64,11 +54,6 @@ const encryptedPassword = await sha512CryptAsync('mySuperSecretPassword', 'myDop
 ```ts
 const isValid = verifySha512('mySuperSecretPassword', arrayOfSha512Passwords)
 // return true or false
-
-// OR
-
-const isValid = await verifySha512Async('mySuperSecretPassword', arrayOfSha512Passwords)
-// return Promise that resolves to => true or false
 ```
 
 ## 📝 License
