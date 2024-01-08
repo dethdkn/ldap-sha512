@@ -1,7 +1,7 @@
 {
 	"name": "ldap-sha512",
 	"type": "module",
-	"version": "2.1.0",
+	"version": "2.1.1",
 	"description": "Ldap sha512-crypt password generator for node",
 	"author": {
 		"name": "Gabriel 'DethDKN' Rosa",
@@ -9,7 +9,7 @@
 		"url": "https://rosa.dev.br"
 	},
 	"license": "MIT",
-	"homepage": "https://github.com/dethdkn/ldap-sha512",
+	"homepage": "https://ldap-passwords.com",
 	"bugs": "https://github.com/dethdkn/ldap-sha512/issues",
 	"keywords": [
 		"sha512",

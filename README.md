@@ -1,4 +1,6 @@
+<a href="http://ldap-passwords.com/">
 <h1 align="center">Ldap-sha512</h1>
+</a>
 <p align="center">Ldap sha512-crypt password generator for node</p>
 <p align="center">
    <a href="https://www.npmjs.com/package/ldap-sha512">
