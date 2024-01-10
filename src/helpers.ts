@@ -249,7 +249,7 @@ function rstrSha512crypt(password: string, salt: string, rounds: number) {
 	return digest
 }
 
-export function sha512(password: string, salt: string): string {
+export default function (password: string, salt: string): string {
 	const hash = rstrSha512crypt(password, salt, 5000)
 	const input = hash
 	let output = ''

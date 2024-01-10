@@ -208,7 +208,7 @@ function rstrSha512crypt(password, salt, rounds) {
     }
     return digest;
 }
-export function sha512(password, salt) {
+export default function (password, salt) {
     const hash = rstrSha512crypt(password, salt, 5000);
     const input = hash;
     let output = '';

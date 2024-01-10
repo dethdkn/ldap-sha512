@@ -1,7 +1,7 @@
 {
 	"name": "ldap-sha512",
 	"type": "module",
-	"version": "2.1.1",
+	"version": "2.1.2",
 	"description": "Ldap sha512-crypt password generator for node",
 	"author": {
 		"name": "Gabriel 'DethDKN' Rosa",
